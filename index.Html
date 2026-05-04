@@ -9,104 +9,17 @@
 
     *{
         box-sizing: border-box;
+       
+       
     }
 body{
     background: black;
     margin: 0;
+    padding: 0;
     user-select: none;
 }
 
 
-.Section{
-    background: red;
-    padding: 1px 13px;
-    justify-content: center;
-    align-items: center;
-}
-
-.Section ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 30px;
-}
-
-
-.Section li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    color: black;
-    transition:all 0.3s ease;
-    border-left: 1px solid white;
-   
-    
-    
-}
-
-.Section li  :hover{
- 
-    background: linear-gradient(to left bottom,black,blue);
-   padding: 15px;
-    color: white;
-    border-left: 5px solid green;
-    border-radius: 6px;
-    transition: 0.3s ease;
-    box-shadow: 1px 1px 1px white;
-     
-} 
-
-.CS{
-background: white;
-padding: 12px 13px;
-}
-
-.CS ul{
-list-style:decimal-leading;
-    
-}
-
-.CS li{
-    padding: 12px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    border: 1px solid gray;
-     transition: all 0.3s ease;
-
- 
-
-}
-
-.CS li:hover{
-    border: 1px solid green;
-   background: linear-gradient(to right,white,black);
-    text-shadow: 0 0 2px  red;
-    font-weight: bold;
-   
-
-    
-
-}
-
-
-.CS span{
-
-    animation: ANSH 2s infinite alternate;
-}
-
-
-@keyframes ANSH {
-
-    From{
-        text-shadow: 2px 2px 2px red,
-        4px 4px 2px green;
-    }
-    to{
-         
-    }
-    
-}
 
 
 .Con{
@@ -115,48 +28,10 @@ list-style:decimal-leading;
 padding: 10px;
 }
 
-table{
 
-    margin-left: 40%;
+
    
 
-
-}
-
-
-table th{
- word-spacing: 0px;
- text-align: center;
- font-size: 20px;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- 
-
-
-}
-
-table td{
-  
-    text-align: center;
-    padding: 1px 12px;
-    gap: 20px;
-    font-size: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-    
-   
-    
-}
-
-
-.Con p{
-    text-align: center;
-    background: red;
-    padding: 12px 13px;
-    font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-   
-}
 
 .Bank{
     background: gold;
@@ -190,7 +65,6 @@ table td{
     display: flex;
     justify-content: center;
     gap: 50px;
-  
     list-style: none;
     font-size: 20px;
 }
@@ -200,7 +74,7 @@ table td{
       color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
      transition: all  0.3s ease;
-     text-decoration:line-through;
+   
 }
 
 .Sec li a:hover{
@@ -287,6 +161,7 @@ marquee{
      background: white;
      border: 1px solid black;
         border-radius: 6px;
+        transition: all 0.3s ease;
 
      
 }
@@ -296,12 +171,30 @@ marquee{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
-    width: 50%;
-    max-width: 50%;
+    font-size: 25px;
+    width: 100%;
+    max-width: 100%;
 }
 
+    .Card h5{
+        font-size: 19px;
+    }
+.Card p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.Card p:hover{
+    color: red;
+    font-weight: bold;
+    transform: scale(1.0);
+    
+}
+    
 .Card p::before{
     content: "•";
+    
 }
 
 .Card h2{
@@ -313,6 +206,22 @@ marquee{
 
 }
 
+
+.Card li:hover{
+    transform: scale(1.1);
+    
+    
+}
+
+.Card a{
+    background: green;
+    border: 1px solid green;
+    color: white;
+    padding: 1px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 
 @keyframes Ansh {
@@ -327,6 +236,28 @@ marquee{
 
 @media (max-width:768px) {
 
+
+    .Sec li a:hover{
+        text-shadow:  0 0 10px red;
+        border: none;
+        filter: drop-shadow(2px 2px 5px black);
+        color: white;
+        
+    }
+
+    table td{
+        font-size: 15px;
+    }
+
+    .Con  li.p{
+        font-size: 15px;
+        max-width: 100%;
+        margin-top: 2px;
+      
+    }
+
+
+
 .Cors ul{
     display: grid;
     grid-template-columns: 1fr;
@@ -339,15 +270,30 @@ marquee{
 
 .Sec ul{
 font-size: 15px;
+gap: 30px;
 
 }
     
 }
 
-
-
-
-
+table
+{
+    max-width: 100%;
+    width: 100%;
+    background: white;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.div {
+    background: white;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 </style>
 <body>
@@ -363,8 +309,8 @@ font-size: 15px;
         <ul>
             <li><a href="#"> Home</li></a> 
               <li><a href="#"> Insert</li></a> 
-                <li><a href="#">More Update's</li></a> 
-                  <li><a href="#">Contect</li></a> 
+                <li><a href="#">Updates</li></a> 
+                  <li><a href="#">Contact</li></a> 
                   
         </ul>
     </div>       
@@ -373,15 +319,18 @@ font-size: 15px;
 
         <h2>OUR Spacial Courses</h2>
         <ul>
-            <li>CCA <span>:Computer Caption Application</span></li>
-            <li>ACCA <span>:Computer Caption Application</span></li>
-            <li>PGDCA <span>:Computer Caption Application</span></li>
-            <li>DCA <span>:Computer Caption Application</span></li>
-            <li>CPCT <span>:Computer Caption Application</span></li>
-            <li>Coding <span>:Computer Caption Application</span></li>
-            <li>Graphics Designing <span>:Computer Caption Application</span></li>
-            <li>Web Devlopment <span>:Computer Caption Application</span></li>
-            <li>Tally Prime With Gst</li>
+            <li>CCA <span>Duration: 3 Month</span></li>
+            <li>ACCA <span>Duration 6 Month</span></li>
+            <li>PGDCA <span>Duration: 1 Year</span></li>
+            <li>DCA <span>Duration: 1 Year</span></li>
+            <li>ADVANCE Excel</li>
+            <li>DTP</li>
+            <li>Web Desingn <span>Duration: 3 Month</span></li>
+            <li>CPCT<span>Duration: 4 Month</span></li>
+            <li>Programing <span>Duration: 3 Month</span></li>
+            <li>Graphics Designing <span>Duration: 3 Month</span></li>
+            <li>Web Devlopment<span>Duration: 3 Month</span></li>
+            <li>Tally Prime With Gst <span>Duration: 2 Month</span></li>
             <li>Job Full Course</li>
         </ul>
     </div>
@@ -404,22 +353,102 @@ font-size: 15px;
             <h2>OUR Courses Details</h2>
            <ul>
             <li>
-                <h1>Python</h1>
-                <p>HI</p>
+                <h1>ACCA: Certificate In Computer Accounting</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,PowerPoint)</p>
+                <p>CPCT Preparation</p>
+                  <p>Tally Prime(With Gst)</p>
+                   <p>Graphics Desingn (Photo Shop, Corel Draw, Pagemaker)</p>
+                    <p>Hindi + English Typing</p>
+                     <p>Internet</p>
+                
+                <a href="">Learning</a>
             </li>
 
                  <li>
-                <h1>Python</h1>
-                <p>HI</p>
+                <h1>CCA: Certificate In Computer Application</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,PowerPoint)</p>
+                <p>Hindi + Englesh Typing </p>
+                <p>Internet</p>
+                <a href="">Learning</a>
 
             </li>
              <li>
-                <h1>Python</h1>
-                <p>HI</p>
+                <h1>DCA: Diploma In Computer Application</h1>
+               <h5>Sem-1</h5>
+                 <p>Computer Fundamentals</p>
+                 <p>Pc Packages (Word,Excel,Power Point)</p>
+                 <p>Data Base Using Foxpro</p>
+                 <p>Ms Acces</p>
+                <h5>Sem-2</h5>
+                 <p>It Treds</p>
+                 <p>Internet & E - Commerce</p>
+                 <p>Multi Media With Corel Draw</p>
+                 <p>DTP With Pagemaker & Photo Shop</p>
+                <a href="">Learning</a>
             </li>
              <li>
-                <h1>Python</h1>
-                <p>HI</p>
+                <h1>PGDCA: Post Graduate Diploma In Computer Application</h1>
+                 <h5>Sem-1</h5>
+                 <p>Computer Fundamentals</p>
+                 <p>Pc Packages (Word,Excel,Power Point)</p>
+                 <p>Ms Acess</p>
+                 <p>Data Base Using My sql</p>
+                 <p>Multi Media</p>
+                 <p>Veb.net</p>
+                <h5>Sem-2</h5>
+                 <p>It Treds</p>
+                 <p>Internet & Web Desingn</p>
+                 <p>Tally</p>
+                 <p>DTP With Page Maker & Photo Shop</p>
+                <a href="">Learning</a>
+               
+            </li>
+             <li>
+                <h1>CPCT: Training Course</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,Power Point)</p>
+                <p>Libre Office + Exam Preparation</p>
+                <p>Hindi + English Typing</p>
+                <p>Internet</p>
+                <a href="">Learning</a>
+            </li>
+             <li>
+                <h1>Programing</h1>
+                <p>Java</p>
+                <p>Python</p>
+                <p>C,C++</p>
+                <a href="">Learning</a>
+            </li>
+             <li>
+                <h1>CPCTS Training Course</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,Power Point)</p>
+                <p>Libre Office + Exam Preparation</p>
+                <p>Hindi + English Typing</p>
+                <p>Internet</p>
+                <a href="">Learning</a>
+            </li>
+
+             <li>
+                <h1>Graphics Designing + Desktop Publishing </h1>
+                <p>Corel Draw</p>
+                <p>Photo Shop</p>
+                <p>Pagemaker</p>
+                <p>Canva</p>
+                <a href="">Learning</a>
+            </li>
+            <li>
+                <h1>Web Desingn Course</h1>
+                <p>Html</p>
+                <p>Css</p>
+                <p>Java Script</p>
+                <a href="">Learning</a>
             </li>
             
            </ul>
@@ -427,29 +456,19 @@ font-size: 15px;
         </div>
 
 
-
-    <div class="Con">
+        <div class="div">
         <table>
             <tr>
-                <b><th>Name</th></b>
-              <b><th>Contect</th></b>
+                <th>Name</th>
+                <th>Contact</th>
             </tr>
-
             <tr>
                 <td>Ajay Prajapat Sir</td>
-                <td>91:6261370529</td>
-               
+                <td>91: 6261370529</td>
             </tr>
-
         </table>
-
-<p> Sunshine_Tower_TeenBatti_Chouraha_Freeganj_Ujjain (.M.P.)</p>
-
-
-
-    </div>
-
-
+        <p>ADDRESS: Sunshine Tower Teen Batti Chouraha Freeganj Ujjain (M.P.)</p> <a href="map.html">Click To Google Map Location</a>
+        </div>
 
 
 
